@@ -9,9 +9,11 @@ var seconds
 
 
 updateTime()
+const interval=window.setInterval(updateTime,1000)
 
 function updateTime(){
-    year=new Date().getFullYear()+1
+
+     year=new Date().getFullYear()+1
      now= new Date().getTime()
      target=new Date("Jan 1,"+year + " 00:00:00").getTime()
     distance=target-now
@@ -25,5 +27,7 @@ function updateTime(){
      document.getElementById("min").textContent=minutes+ " "
      document.getElementById("seconds").textContent=seconds+ " "
      
-     window.setInterval(updateTime,1000)
+     
 }
+
+
