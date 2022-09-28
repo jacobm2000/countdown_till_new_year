@@ -4,8 +4,12 @@
     
  
 }
+h1{
+    margin-bottom: 10rem;
+    font-family:'Times New Roman', Times, serif;
+}
 body{
-    margin-top: 15%;
+    
     background-image: url("Images/stars.gif");
     color: white;
     text-align: center;
